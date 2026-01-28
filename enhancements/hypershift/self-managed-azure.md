@@ -441,6 +441,11 @@ This proposal does not apply to Single-node OpenShift (SNO) or MicroShift
 deployments. While SNO could theoretically serve as a management cluster for
 HyperShift, this is not a target use case for self-managed Azure.
 
+#### OpenShift Kubernetes Engine
+
+Not applicable. This enhancement is specific to the HyperShift topology and does
+not affect OKE.
+
 ### Implementation Details/Notes/Constraints
 
 The implementation builds on the existing HyperShift Azure support used by ARO
