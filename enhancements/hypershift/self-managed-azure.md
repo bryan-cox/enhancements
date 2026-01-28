@@ -504,15 +504,12 @@ sequenceDiagram
 
 The Control Plane Operator configures each Azure-aware component with:
 
-1. **Service Account**: A dedicated service account with an annotation linking
-   it to an Azure Managed Identity:
+1. **Service Account**: A dedicated service account for the component:
    ```yaml
    apiVersion: v1
    kind: ServiceAccount
    metadata:
      name: cloud-controller-manager
-     annotations:
-       azure.workload.identity/client-id: "<managed-identity-client-id>"
    ```
 
 2. **Projected Token Volume**: The pod spec includes a projected volume that
