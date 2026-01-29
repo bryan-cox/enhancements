@@ -149,7 +149,7 @@ HyperShift:
      (OIDC issuer URL, managed identities file).
    - `hypershift create infra azure`: New infrastructure provisioning command
      for creating Azure resources (VNets, subnets, NSGs, storage accounts).
-   - `hypershift create credentials azure`: New command for generating workload
+   - `hypershift create iam azure`: New command for generating workload
      identity credentials and federated credential configurations.
 
 2. **Control Plane Operator (CPO)**
@@ -572,7 +572,7 @@ automatically assigned to the managed identities. When `--assign-custom-hcp-role
 is passed, custom roles with least-privilege permissions are assigned instead of
 the default Contributor role.
 
-The `hypershift create credentials azure` command generates the required managed
+The `hypershift create iam azure` command generates the required managed
 identities and federated credentials based on a workload identities
 configuration file.
 
